@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    text-align: center;
+    padding: 40px 0 80px;
+    margin: 5% 18%;
+    padding: 20px;
+}
+.container{
+
+    width: 700px;
+    height: 500px;
+    margin: 40px;
+    padding: 15px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px black;
+}
+form{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    grid-template-areas:
+    "Prenom Prenom Nom"
+    "email email email"
+    "message message message"
+    "button button button";
+}
+input{
+    height: 40px;
+}
+input, textarea{
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+}
+#Prenom{
+    grid-area: Prenom;
+}
+#Nom{
+    grid-area: Nom;
+}
+#email{
+    grid-area: email;
+}
+#message{
+    grid-area: message;
+}
+#button{
+    grid-area: button;
+}
+textarea{
+    padding: 5px;
+    resize: none;
+}
+#button{
+    background-color: aquamarine;
+}
+#button:hover{
+    background-color: rgb(22, 22, 247);
+    color: aliceblue;
+}
